@@ -12,3 +12,5 @@ saját factory létrehozása -> php artisan make:factory -m tablanev tablanevFac
 
 .env mappában adatbázis adatai
 database/migrations -> táblák létrehozása
+
+php artisan serve
