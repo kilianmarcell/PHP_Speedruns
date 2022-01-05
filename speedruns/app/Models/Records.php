@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Records extends Model
 {
     use HasFactory;
+
+    public function game() {
+        return $this->belongsTo(Game::class);
+    }
+
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
 }
