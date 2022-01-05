@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Game;
 use App\Models\Records;
 use Illuminate\Support\Facades\Route;
 
@@ -18,4 +19,10 @@ Route::get('/', function () {
     $records = Records::all();
 
     return view('leaderboards', ['records' => $records]);
+});
+
+Route::get('/game/{id}', function (int $id) {
+    $game = Game::find($id);
+
+    return view('game', ['game' => $game]);
 });
