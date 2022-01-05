@@ -3,6 +3,11 @@ táblákat létrehozni -> php artisan migrate (elötte -> cd fajlneve)
 új tábla létrehozásához -> php artisan make:model -m tablanev
 táblák újratöltése (törlés és futtatás) -> php artisan migrate:fresh
 
+database/seeders -> adatokkal feltölthetünk táblákat
+táblákat példa adatokkal feltölteni -> php artisan db:seed
+
+
+saját factory létrehozása -> php artisan make:factory -m tablanev tablanevFactory
 
 
 .env mappában adatbázis adatai
