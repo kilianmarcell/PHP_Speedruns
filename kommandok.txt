@@ -1,0 +1,9 @@
+laravel hozzáadása -> composer create-project laravel/laravel fajlnev
+táblákat létrehozni -> php artisan migrate (elötte -> cd fajlneve)
+új tábla létrehozásához -> php artisan make:model -m tablanev
+táblák újratöltése (törlés és futtatás) -> php artisan migrate:fresh
+
+
+
+.env mappában adatbázis adatai
+database/migrations -> táblák létrehozása
